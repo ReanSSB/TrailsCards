@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cards 2019</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body, h2, p{
+                padding:0;
+                margin:0;
+            }
+            h2, p{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                user-select:none;
+                color: white;
+            }
+            h2{
+                font-size:12px;
+                text-align: center;
+           
+            }
+            p{
+                font-size: 120px;
+            }
+            .card{
+                width: 160px;
+                height: 260px;
+            }
+            .card:hover .card-inner{
+                transform: rotateY(180deg);
+            }
+            .card-front, .card-back{
+                backface-visibility: hidden;
+                position: absolute;
+                top: 0;
+                background-color: black;
+                width: 160px;
+                height: 260px;
+                text-align: center;
+            }
+            .card-back{
+                transform: rotateY(180deg);
+            }
+            .card-front{
+                line-height: 260px;
+            }
+            .image-holder{
+                width: 160px;
+                height: 230px;
+            }
+            .card-name{
+                width: 160px;
+                height: 30px;
+                line-height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="deck">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-back">
+                        <div class="image-holder">
+                            <img src="images/col-mustard.jpg">
+                        </div>
+                        <div class="card-name">
+                            <h2>Colonel Mustard</h2>
+                        </div>
+                    </div>
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
